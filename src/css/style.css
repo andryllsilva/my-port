@@ -1,0 +1,75 @@
+html{
+    font-size: 62.5%;
+    font-family: 'Ubuntu', sans-serif;
+}
+
+body{
+    display: grid;
+    grid-template-areas: 'header header header'
+                         'home home home'
+                         'about about about'
+                         'projects projects projects'
+                         'footer footer footer';
+}
+
+/* HEADER */
+
+.header{
+    grid-area: header;
+    background-color: #000000;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    min-height: 75px;
+    padding: 10px 40px;
+}
+
+.header .logo{
+    font-size: 2rem;
+    font-weight: 700;
+    color: rgb(18, 137, 20);
+}
+
+.header nav ul{
+    display: flex;
+    gap: 20px;
+    font-size: 2rem;
+}
+
+
+/* HOME */
+
+.home{
+    grid-area: home;
+    background-color: #131212;
+    height: 87vh;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 60px;
+}
+
+.home .tittle{
+    font-size: 5rem;
+    color: #fff;
+}
+
+.home .tittle .glitch{
+    font-family: 'Rubik Glitch', sans-serif;
+    color: rgb(18, 137, 20);
+    font-weight: 400;
+}
+
+.home img{
+    width: 400px;
+    animation: float infinite 7s;
+}
+
+@-webkit-keyframes float {
+    0%{transform: translateY(0);}
+
+    50%{transform: translateY(-20px);}
+
+    100%{transform: translateY(0);}
+}
+
