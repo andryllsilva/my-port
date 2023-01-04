@@ -8,13 +8,22 @@
     margin: 5px;
     color: white;
     font-size: 2rem;
-    transition: 0.3s;
-}
-
-.header nav li a:hover{
-    background-color: rgb(91, 91, 91);
+    transition: 0.4s ease-in;
     border-radius: 15px;
 }
+
+nav ul li::after {
+    content: "";
+    display: block;
+    border-bottom: 2px solid var(--cor-span);
+    margin-top: 5px;
+    transform: scaleX(0);
+    transition: transform 0.3s ease;
+  }
+  
+  nav ul li:hover::after {
+    transform: scaleX(1);
+  }
 
 /* RESPONSIVE */
 

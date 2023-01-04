@@ -16,19 +16,25 @@ body{
 
 .header{
     grid-area: header;
-    background-color: #000000;
+    background-color: var(--cor-header);
     display: flex;
     justify-content: space-between;
     align-items: center;
     min-height: 75px;
-    padding: 10px 40px;
+    padding: 10px 7%;
 }
 
 .header .logo{
     font-size: 2rem;
     font-weight: 700;
-    color: rgb(18, 137, 20);
+    color: var(--cor-span);
+    text-decoration: underline;
+    border: 2px solid var(--cor-span);;
+    border-radius: 50%;
+    padding: 15px;
 }
+
+
 
 .header nav ul{
     display: flex;
@@ -41,29 +47,42 @@ body{
 
 .home{
     grid-area: home;
-    background-color: #131212;
-    height: 87vh;
+    background-color: var(--cor-primaria);
+    height: 90vh;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 0 60px;
+    padding: 0 10%;
 }
 
-.home .tittle{
-    font-size: 5rem;
+.home .title{
+    font-size: 3.5rem;
     color: #fff;
+    margin-left: 2%;
+    text-transform: uppercase;
+    font-weight: 400;
 }
 
-.home .tittle .glitch{
-    font-family: 'Rubik Glitch', sans-serif;
-    color: rgb(18, 137, 20);
+.home .title .name {
+    font-weight: 500;
+    margin: 20px 0;
+    color: #fff;
+    font-size: 6rem;
+}
+
+.home .title .glitch{
+    font-family: 'Hacked', sans-serif;
+    font-style: italic;
+    color: var(--cor-span);
     font-weight: 400;
+    
 }
 
 .home img{
     width: 400px;
-    animation: float infinite 7s;
+    margin-right: 10%;
 }
+
 
 @-webkit-keyframes float {
     0%{transform: translateY(0);}
@@ -73,3 +92,38 @@ body{
     100%{transform: translateY(0);}
 }
 
+
+/* ABOUT */
+
+.about{
+    grid-area: about;
+    background-color: var(--cor-primaria);
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    gap: 0px;
+}
+
+.about img{
+    width: 400px;
+    animation: float 6s infinite;
+}
+
+.about .container-about{
+    color: #fff;
+    max-width: 900px;
+    margin-left: -5%;
+}
+
+.about .title-about{
+    font-family: 'Hacked', sans-serif;
+    font-style: italic;
+    color: var(--cor-span);
+    font-size: 3rem;
+    margin-bottom: 20px;
+}
+
+.about .description-about{
+    font-size: 2rem;
+    font-weight: 100;
+}
