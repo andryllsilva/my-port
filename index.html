@@ -45,30 +45,91 @@
             </ul>
         </nav>
     </header>
-    <section class="home">
-        <h1 class="title">
-            Oi &#9996, eu sou <br><div class="name">Andryll Rafael,</div>
-            <span class="glitch">Desenvolvedor front-end</span>
-        </h1>
+    <section class="home section">
+        <div class="container-home">
+            <div class="title">
+                <h1>
+                    Oi &#9996, eu sou <br>
+                    <div class="name">Andryll Rafael,</div>
+                    <span class="glitch">Desenvolvedor front-end</span>
+                </h1>
+            </div>
 
-        <img src="src/images/—Pngtree—software developer illustration concept _4853421.png" alt="Ilustração representando uma desenvolvedora sentada na cadeira mexendo no notebook com ambiente em volta." data-tilt="" style="transform: perspective(1000px) rotateX(0deg) rotateY(0deg) scale3d(1, 1, 1); will-change: transform;">
+
+            <div class="container-buttons">
+                <a href="">
+                    <div class="linkedin buttons">
+                        <img src="src/images/linkedin.png" alt="imagem linkedin" class="image-width">
+                        <p>LINKEDIN</p>
+                    </div>
+                </a>
+                <a href="">
+                    <div class="github buttons">
+                        <img src="src/images/github.png" alt="imagem git hub" class="image-width">
+                        <p>GITHUB</p>
+                    </div>
+                </a>
+            </div>
+        </div>
+
+        <div class="scroll-down">
+            <a href="#about">
+                    <p>scroll down</p>
+                    <img src="src/images/kisspng-arrow-symbol-icon-down-arrow-png-pic-5a756e2591b7b9.1532686215176453495969 (1).png" alt="imagem de seta para baixo">
+            </a>
+        </div>
+
+        <img class="img-home" src="src/images/—Pngtree—software developer illustration concept _4853421.png"
+            alt="Ilustração representando uma desenvolvedora sentada na cadeira mexendo no notebook com ambiente em volta."
+            data-tilt=""
+            style="transform: perspective(1000px) rotateX(0deg) rotateY(0deg) scale3d(1, 1, 1); will-change: transform;">
     </section>
-    <section class="about">
-        <img src="src/images/IMG_6450-removebg-preview.png" alt="minha foto">
+    <section class="about section">
+        <img src="src/images/IMG_6450-removebg-preview.png" alt="minha foto" class="myphoto">
         <div class="container-about">
             <h3 class="title-about">Sobre mim</h3>
+            <h4 class="sub-title">Esteio, Rio Grande Do Sul</h4>
             <p class="description-about">Sou um estudante apaixonado por computadores e programação, me encontrei na
                 tecnologia quando eu tinha 12 anos e ganhei meu primeiro PC, depois disso fui conhecendo algumas
                 linguangens e atualmente curso Ciência da Computação na Universidade Unisinos. Meu sonho é me tornar um
-                excelente profissional nessa área e realizar algo grandioso no futuro! Comecei esse objetivo estudando
-                Java, HTML, CSS e JavaScript. Busco uma primeira oportunidade nessa área para evoluir juntamente com a
+                excelente profissional nessa área e realizar algo grandioso no futuro! Busco uma primeira oportunidade nessa área para evoluir juntamente com a
                 empresa e minha faculdade.</p>
+            <a href="#">
+                <div class="curriculo buttons">
+                    <img class="img-width" src="src/images/download-da-nuvem.png" alt="imagem de nuvem de download">
+                    <p>CURRICULO</p>
+                </div>
+            </a>
         </div>
     </section>
-    <section class="skills">3</section>
-    <section class="projects">3</section>
+    <section class="skills section">
+        <div class="description-skills">
+            <h3 class="title-skills">HABILIDADES</h3>
+            <p>Atualmente comecei minha jornada estudando: <span>HTML, CSS, JavaScript, Java e Python.</span> Estou sempre em busca de aprimorar meus conhecimentos atuais e aprender habilidades novas!</p>
+        </div>
+
+        <div class="skills-charts">
+            <div id="myCanvasContainer">
+                <canvas width="500" height="500" id="myCanvas">
+                    <ul id="tags">
+                        <li><a href="#" target="_blank">HTML</a></li>
+                        <li><a href="#" target="_blank">CSS</a></li>
+                        <li><a href="#" target="_blank">JavaScript</a></li>
+                        <li><a href="#" target="_blank">Java</a></li>
+                        <li><a href="#" target="_blank">Python</a></li>
+                        <li><a href="#" target="_blank">React</a></li>
+                        <li><a href="#" target="_blank">TypeScript</a></li>
+                    </ul>
+                </canvas>
+            </div>
+        </div>
+    </section>
+    <section class="projects section">3</section>
     <footer class="footer">4</footer>
+    <script src="https://code.jquery.com/jquery-3.6.3.js" integrity="sha256-nQLuAZGRRcILA+6dMBOvcRh5Pe310sBpanc6+QBmyVM=" crossorigin="anonymous"></script>
+    <script src="src/js/jquery.tagcanvas.js"></script>
     <script src="src/js/index.js"></script>
+    
 </body>
 
 </html>

@@ -8,6 +8,7 @@ body{
     grid-template-areas: 'header header header'
                          'home home home'
                          'about about about'
+                         'skills skills skills'
                          'projects projects projects'
                          'footer footer footer';
 }
@@ -32,6 +33,13 @@ body{
     border: 2px solid var(--cor-span);;
     border-radius: 50%;
     padding: 15px;
+    transition: 0.3s ease-in-out;
+}
+
+
+.header .logo:hover{
+    color: #fff;
+    border-color: #fff;
 }
 
 
@@ -48,17 +56,17 @@ body{
 .home{
     grid-area: home;
     background-color: var(--cor-primaria);
-    height: 90vh;
+    height: 86vh;
     display: flex;
     justify-content: space-between;
     align-items: center;
     padding: 0 10%;
+    position: relative;
 }
 
-.home .title{
-    font-size: 3.5rem;
+.home .title h1{
+    font-size: 4rem;
     color: #fff;
-    margin-left: 2%;
     text-transform: uppercase;
     font-weight: 400;
 }
@@ -78,33 +86,105 @@ body{
     
 }
 
-.home img{
-    width: 400px;
+.home .container-buttons{
+    margin-top: 25px;
+    display: flex;
+    gap: 80px;
+}
+
+
+.buttons{
+    color: #fff;
+    display: flex;
+    align-items: center;
+    border: 2px solid var(--cor-span);
+    padding: 15px;
+    border-radius: 10px;
+    width: 155px;
+    justify-content: center;
+    font-size: 1.3rem;
+    font-weight: 700;
+    gap: 7px;
+    transition: 0.3s ease-in-out;
+}
+
+.buttons:hover{
+    background-color: var(--cor-span);
+    border-color: #fff;
+    text-shadow: 1px 1px 3px #fff;
+}
+
+.home .image-width{
+    width: 25px;
+}
+
+.home .img-home{
+    width: 450px;
     margin-right: 10%;
 }
 
-
-@-webkit-keyframes float {
-    0%{transform: translateY(0);}
-
-    50%{transform: translateY(-20px);}
-
-    100%{transform: translateY(0);}
+.home .scroll-down img{
+    width: 15px;
+    height: 15px;
+    animation: scroll-down 3s infinite forwards;
 }
+.home  .scroll-down a{
+    display: flex;
+    white-space: nowrap;
+    gap: 15px;
+}
+
+.home .scroll-down{
+    position: absolute;
+    bottom: 0;
+    right: 50%;
+    padding: 20px;
+}
+
+.home .scroll-down p{
+    font-size: 1.3rem;
+    color: var(--cor-span);
+    font-weight: 800;
+    transition: 0.3s ease-in-out;
+}
+
+.home .scroll-down p:hover{
+    color: #fff;
+}
+
+
+
+@keyframes scroll-down {
+    0% {
+      opacity: 0;
+      transform: translate3d(0, -15px, 0);
+    }
+    30% {
+      opacity: 0;
+    }
+    60% {
+      opacity: 1;
+    }
+    100% {
+      opacity: 0;
+      transform: translate3d(0, 10px, 0);
+    }
+  }
+  
 
 
 /* ABOUT */
 
 .about{
     grid-area: about;
-    background-color: var(--cor-primaria);
+    background-color: var(--cor-secundaria);
     display: flex;
     align-items: center;
     justify-content: space-evenly;
-    gap: 0px;
+    gap: 10%;
 }
 
-.about img{
+.about .myphoto{
     width: 400px;
     animation: float 6s infinite;
 }
@@ -124,6 +204,60 @@ body{
 }
 
 .about .description-about{
-    font-size: 2rem;
-    font-weight: 100;
+    font-size: 1.8rem;
+    font-weight: 200;
+    margin: 20px 0 30px 0;
+}
+
+.section{
+    padding: 5% 10%;
+}
+.about .sub-title{
+    font-size: 1.8rem;
+}
+
+@-webkit-keyframes float {
+    0%{transform: translateY(0);}
+
+    50%{transform: translateY(-20px);}
+
+    100%{transform: translateY(0);}
+}
+
+/* SKILLS */
+
+.skills{
+    grid-area: skills;
+    background-color: var(--cor-primaria);
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: 1fr;
+    align-items: center;
+    padding: 5% 8%;
+    gap: 30%;
+}
+
+.skills .description-skills{
+    color: #fff;
+    font-size: 1.8rem;
+    width: 100%;
+    justify-content: center;
+}
+
+.skills .description-skills span{
+    color: var(--cor-span);
+    text-transform: uppercase;
+    font-weight: 600;
+}
+
+.skills .description-skills .title-skills{
+    margin-bottom: 10px;
+    font-family: 'hacked', sans-serif;
+    font-style: italic;
+    color: var(--cor-span);
+    font-size: 3rem;
+}
+
+.skills canvas ul li{
+    color: #fff;
 }
