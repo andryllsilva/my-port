@@ -1,3 +1,8 @@
+@font-face {
+    font-family: 'Hacked';
+    src: url(/src/images/Hacked-KerX.ttf);
+}
+
 html{
     font-size: 62.5%;
     font-family: 'Ubuntu', sans-serif;
@@ -130,7 +135,6 @@ body{
 
 .home .img-home{
     width: 450px;
-    margin-right: 10%;
     animation: float 5s infinite;
 }
 
@@ -356,7 +360,7 @@ body{
     .home.section{
         display: flex;
         flex-direction: column;
-        height: 90vh;
+        height: 95vh;
     }
 
     .home.section .name{
@@ -401,6 +405,41 @@ body{
     .skills .skills-charts canvas{
         width: 400px;
         font-weight: 600;
+    }
+}
+
+@media (max-width: 420px){
+    .home.section .img-home{
+        width: 320px;
+    }
+
+    .skills .skills-charts canvas{
+        width: 320px;
+        font-weight: 600;
+    }
+
+    .about.section .myphoto{
+        width: 320px;
+    }
+
+    .home .title{
+        text-align: center;
+    }
+
+    .home .title .name{
+        line-height: 60px;
+    }
+
+    .home .home-itens{
+        margin-top: 40px;
+    }
+
+    .home .container-buttons{
+        display: flex;
+        flex-direction: column;
+        gap: 30px;
+        align-items: center;
+        margin-top: 45px;
     }
 }
 
